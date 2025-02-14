@@ -18,5 +18,55 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    // Dados da carta
+    char codigo_carta[4] = "";
+    char estado[100] = "";
+
+    // Dados da cidade
+    char nome_cidade[100] ;
+    int populacao = 0;
+    float area = 0.0f;
+    float pib = 0.0f;
+    int qtd_pontos_turisticos = 0;
+
+
+    // Inicio do processamento
+    printf("\n==================\n");
+    printf("Cadastro de Carta");
+    printf("\n==================\n");
+
+    printf("\n");
+    printf("\n*******************************\n");
+    printf("Digite as informações da carta:");
+    printf("\n*******************************\n");
+    printf("Código da carta: ");
+    scanf(" %3s", codigo_carta);
+    printf("Estado: ");
+    scanf("  %99s", estado);
+    printf("Cidade: ");
+    scanf("  %9s", nome_cidade);
+    printf("População: ");
+    scanf(" %d", &populacao);
+    printf("Área (Km2): ");
+    scanf(" %f", &area);
+    printf("PIB (R$): ");
+    scanf(" %f", &pib);
+    printf("Quantidade de Pontos Turísticos: ");
+    scanf(" %d", &qtd_pontos_turisticos);
+
+
+    printf("\n*****************************\n");
+    printf("Carta Cadastrada com sucesso!");
+    printf("\n*****************************\n");
+
+    printf("Código da carta: %s\n", codigo_carta);
+    printf("Estado: %s\n", estado);
+    printf("Cidade: %s\n", nome_cidade);
+    printf("População: %d\n", populacao);
+    printf("Área (Km2): %.2f\n", area);
+    printf("PIB (R$): %.2f\n", pib);
+    printf("Quantidade de Pontos Turísticos: %d\n", qtd_pontos_turisticos);
+
+
     return 0;
 }
