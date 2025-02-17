@@ -1,72 +1,125 @@
+#include <errno.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+#define SIZE 5
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+typedef struct CartaSuperTrunfo {
+    char codigo_carta[4];
+    char estado[100];
+    char nome_cidade[100];
+    int populacao;
+    float area;
+    float pib;
+    int qtd_pontos_turisticos;
+} carta_super_trunfo;
 
-    // Dados da carta
-    char codigo_carta[4] = "";
-    char estado[100] = "";
+float calcularDensidadePopulacional(float populacao, float area) {
+    return populacao / area;
+}
 
-    // Dados da cidade
-    char nome_cidade[100] ;
-    int populacao = 0;
-    float area = 0.0f;
-    float pib = 0.0f;
-    int qtd_pontos_turisticos = 0;
+float calcularPibPerCapta(float populacao, float pib) {
+    return pib / populacao;
+}
 
+void initializeArray(carta_super_trunfo array[SIZE]) {
+    for (int i = 0; i < SIZE; i++) {
+        array[i].populacao = 0;
+        strcpy(array[i].codigo_carta, "");
+        strcpy(array[i].estado, "");
+        strcpy(array[i].nome_cidade, "");
+        array[i].area = 0.0f;
+        array[i].pib = 0.0f;
+        array[i].qtd_pontos_turisticos = 0;
+    }
+}
 
-    // Inicio do processamento
+carta_super_trunfo inserir_carta() {
+    char populacao_str[100] = "";
+    char area_str[100] = "";
+    char pib_str[100] = "";
+    char qtd_pts_tur_str[100] = "";
+    carta_super_trunfo nova_carta = {0};
+
     printf("\n==================\n");
     printf("Cadastro de Carta");
     printf("\n==================\n");
 
-    printf("\n");
-    printf("\n*******************************\n");
-    printf("Digite as informações da carta:");
-    printf("\n*******************************\n");
+    printf("\nDigite as informações da carta:\n");
     printf("Código da carta: ");
-    scanf(" %3s", codigo_carta);
+    scanf(" %3s", nova_carta.codigo_carta);
     printf("Estado: ");
-    scanf("  %99s", estado);
+    scanf(" %99s", nova_carta.estado);
     printf("Cidade: ");
-    scanf("  %9s", nome_cidade);
+    scanf(" %99s", nova_carta.nome_cidade);
     printf("População: ");
-    scanf(" %d", &populacao);
-    printf("Área (Km2): ");
-    scanf(" %f", &area);
-    printf("PIB (R$): ");
-    scanf(" %f", &pib);
-    printf("Quantidade de Pontos Turísticos: ");
-    scanf(" %d", &qtd_pontos_turisticos);
+    scanf(" %99s", populacao_str);
 
+    char *endptr;
+    errno = 0;
+    long populacao_temp = strtol(populacao_str, &endptr, 10);
+    if (errno != 0 || *endptr != '\0') {
+        printf("Error: Invalid population number.\n");
+        exit(EXIT_FAILURE);
+    }
+    nova_carta.populacao = (int) populacao_temp;
+
+    printf("Área (Km2): ");
+    scanf(" %99s", area_str);
+    errno = 0;
+    float area_tmp = strtof(area_str, &endptr);
+    if (errno == ERANGE || *endptr != '\0') {
+        printf("Invalid area.\n");
+        exit(EXIT_FAILURE);
+    }
+    nova_carta.area = area_tmp;
+
+    printf("PIB (R$): ");
+    scanf(" %99s", pib_str);
+    errno = 0;
+    float pib_tmp = strtof(pib_str, &endptr);
+    if (errno == ERANGE || *endptr != '\0') {
+        printf("Invalid PIB.\n");
+        exit(EXIT_FAILURE);
+    }
+    nova_carta.pib = pib_tmp;
+
+    printf("Quantidade de Pontos Turísticos: ");
+    scanf(" %99s", qtd_pts_tur_str);
+    errno = 0;
+    long temp_qtd_pts_tur = strtol(qtd_pts_tur_str, &endptr, 10);
+    if (errno != 0 || *endptr != '\0') {
+        printf("Error: Invalid quantity of tourist attractions.\n");
+        exit(EXIT_FAILURE);
+    }
+    nova_carta.qtd_pontos_turisticos = (int) temp_qtd_pts_tur;
 
     printf("\n*****************************\n");
     printf("Carta Cadastrada com sucesso!");
     printf("\n*****************************\n");
 
-    printf("Código da carta: %s\n", codigo_carta);
-    printf("Estado: %s\n", estado);
-    printf("Cidade: %s\n", nome_cidade);
-    printf("População: %d\n", populacao);
-    printf("Área (Km2): %.2f\n", area);
-    printf("PIB (R$): %.2f\n", pib);
-    printf("Quantidade de Pontos Turísticos: %d\n", qtd_pontos_turisticos);
+    printf("Código da carta: %s\n", nova_carta.codigo_carta);
+    printf("Estado: %s\n", nova_carta.estado);
+    printf("Cidade: %s\n", nova_carta.nome_cidade);
+    printf("Área: %.2f Km2\n", nova_carta.area);
+    printf("População: %d hab.\n", nova_carta.populacao);
+    printf("Densidade Populacional: %.2f hab./Km2\n", calcularDensidadePopulacional((float)nova_carta.populacao, nova_carta.area));
+    printf("PIB: R$ %.2f\n", nova_carta.pib);
+    printf("PIB per capta: R$ %.2f\n", calcularPibPerCapta((float)nova_carta.populacao, nova_carta.pib));
+    printf("Quantidade de Pontos Turísticos: %d\n", nova_carta.qtd_pontos_turisticos);
 
+    return nova_carta;
+}
+
+int main() {
+    carta_super_trunfo cartas[SIZE];
+    initializeArray(cartas);
+
+    carta_super_trunfo new_card = inserir_carta();
+    cartas[0] = new_card;
+
+    printf("\nCarta salva no array com sucesso.\n");
 
     return 0;
 }
