@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/build",
+  "command": "/usr/bin/cc  -I/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/include  -g   -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o   -c /workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/cartas_super_trunfo.c",
+  "file": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/cartas_super_trunfo.c"
+},
+{
+  "directory": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/build",
+  "command": "/usr/bin/cc  -I/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/include  -g   -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o   -c /workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/dynamic_array.c",
+  "file": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/dynamic_array.c"
+},
+{
+  "directory": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/build",
+  "command": "/usr/bin/cc  -I/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/include  -g   -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/interface.c.o   -c /workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/interface.c",
+  "file": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/interface.c"
+},
+{
+  "directory": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/build",
+  "command": "/usr/bin/cc  -I/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/include  -g   -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/main.c.o   -c /workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/main.c",
+  "file": "/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/src/main.c"
+}
+]

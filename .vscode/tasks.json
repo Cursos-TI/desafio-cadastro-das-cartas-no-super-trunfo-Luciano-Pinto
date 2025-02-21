@@ -22,6 +22,18 @@
                 "isDefault": true
             },
             "detail": "Tarefa gerada pelo Depurador."
+        },
+        {
+            "type": "shell",
+            "label": "CMake: build",
+            "command": "cmake",
+            "args": ["--build", "build"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Tarefa do modelo CMake build"
         }
     ],
     "version": "2.0.0"

@@ -1,0 +1,3 @@
+/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/build/CMakeFiles/rebuild_cache.dir
+/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/build/CMakeFiles/edit_cache.dir
+/workspaces/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo/build/CMakeFiles/super_trunfo.dir
