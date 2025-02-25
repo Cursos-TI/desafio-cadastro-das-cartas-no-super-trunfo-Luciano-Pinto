@@ -1,10 +1,13 @@
-//
-// Created by lucianopinto on 20/02/25.
-//
+/**
+ * Created by lucianopinto on 20/02/25.
+ * Arquivo de definição do Array Dinâmico
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/dynamic_array.h"
+#include "dynamic_array.h"
 
 // Função de inicialização do Array Dinâmico
 DynamicArray* createArray(const size_t elementSize, const size_t initialCapacity) {
@@ -28,6 +31,7 @@ DynamicArray* createArray(const size_t elementSize, const size_t initialCapacity
     return arr;
 }
 
+// Função de inserção de elementos no array dinâmico
 void addElement(DynamicArray *arr, const void *element) {
   if (arr->size == arr->capacity) {
     arr->capacity *= 2;
@@ -48,6 +52,7 @@ void addElement(DynamicArray *arr, const void *element) {
   arr->size++;
 }
 
+// Função de obtenção de um elemento do array por índice
 void* getElement(const DynamicArray *arr, const size_t index) {
   if (index >= arr->size) {
     printf("Index out of bounds\n");
@@ -57,6 +62,8 @@ void* getElement(const DynamicArray *arr, const size_t index) {
   return (char*) arr->data + (index * arr->elementSize);
 }
 
+
+// Função de liberação da memória do array dinâmico e seu próprio espaço de memória
 void freeArray(DynamicArray *arr) {
   free(arr->data);
   free(arr);

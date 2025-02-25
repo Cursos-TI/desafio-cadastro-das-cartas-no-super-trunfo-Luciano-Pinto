@@ -6,6 +6,7 @@
 #define DYNAMIC_ARRAY_H
 #include <stddef.h>
 
+// Estrutura para representar um Array Dinâmico
 typedef struct {
     void *data;         // Ponteiro genérico para um dado a ser armazenado no array
     size_t elementSize; // Tamanho de cada elemento

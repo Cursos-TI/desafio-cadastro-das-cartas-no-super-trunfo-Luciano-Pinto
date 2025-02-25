@@ -1,21 +1,24 @@
-//
-// Created by lucianopinto on 21/02/25.
-//
-
-#include "nterface.h"
+/*
+ * Created by lucianopinto on 21/02/25.
+ * Arquivo de definição da interface do programa. 
+ * Não relacionado com a interface das cartas, só do controle do progrma.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+#include "interface.h"
 #include "dynamic_array.h"
 #include "super_trunfo.h"
 
+// Função para limpeza de buffer do teclado.
 void clearBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
+// Função de controle do programa com menu inicial e obtenção da opção do usuário.
 void exibirMenuInicialEObterOpcao(DynamicArray *array) {
     while (TRUE) {
         char input[10] = "\0";  // Buffer para armazenar a entrada
@@ -58,14 +61,15 @@ void exibirMenuInicialEObterOpcao(DynamicArray *array) {
             exit(EXIT_SUCCESS);
             default:
                 printf("\nOpção inválida! Tente novamente!\nPressione 'Enter' para continuar.");
-            while (getchar() != '\n') {}// Consume all leftover input
+            while (getchar() != '\n') {} // Consume all leftover input
             break;
         }
     }
 }
 
+// Função para exibição das cartas constantes no array.
 void exibirIndiceDeCartas(const DynamicArray *array) {
-    char input[10] = "\0";  // Buffer para armazenar a entrada
+    char input[2] = "\0";  // Buffer para armazenar a entrada
     char opcao = '\0';
 
     while (TRUE) {
@@ -105,12 +109,13 @@ void exibirIndiceDeCartas(const DynamicArray *array) {
         switch  (opcao) {
             case '1':
                 printf("\n\n*******************************\n");
-                printf("Selecione a carta pelo código: ");
+                printf("Selecione a carta por seu código: ");
                 input[0] = '\0';
-                // clearBuffer();
+
                 if (fgets(input, sizeof(input), stdin)) {
                     input[strcspn(input, "\n")] = '\0';
                 }
+
                 for (int i = 0; i < array->size; i++) {
                     const CartaSuperTrunfo *carta = getElement(array, i);
                     if (strcmp(input, carta->codigo_carta) == 0) {
@@ -118,13 +123,18 @@ void exibirIndiceDeCartas(const DynamicArray *array) {
                         break;
                     }
                 }
+
                 break;
+
             case '0':
                 return;
+
             default:
                 printf("\nOpção inválida! Tente novamente!\nPressione 'Enter' para continuar.");
-            while (getchar() != '\n') {}// Consume all leftover input
-            break;
+                
+                while (getchar() != '\n') {}// Consume all leftover input
+
+                break;
         }
     }
 }

@@ -27,7 +27,7 @@
             "type": "shell",
             "label": "CMake: build",
             "command": "cmake",
-            "args": ["--build", "build"],
+            "args": ["--build", "SuperTrunfo/build"],
             "group": {
                 "kind": "build",
                 "isDefault": true

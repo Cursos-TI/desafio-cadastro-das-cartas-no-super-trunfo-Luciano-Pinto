@@ -16,6 +16,7 @@ float calcularPibPerCapta(const float populacao, const float pib) {
     return pib / populacao;
 }
 
+// Função para impressão de uma carta já gerada.
 void imprimirCarta(CartaSuperTrunfo carta) {
     printf("\n*************************************\n");
     printf("Código da carta: %s\n", carta.codigo_carta);
@@ -45,7 +46,6 @@ void inserir_carta(DynamicArray *cartas) {
     printf("Digite as informações da carta:\n");
     printf("*******************************\n");
 
-    // clearBuffer();
     printf("Código da carta: ");
     if (fgets(nova_carta.codigo_carta, sizeof(nova_carta.codigo_carta), stdin)) {
         nova_carta.codigo_carta[strcspn(nova_carta.codigo_carta, "\n")] = '\0';
@@ -57,13 +57,11 @@ void inserir_carta(DynamicArray *cartas) {
         nova_carta.estado[strcspn(nova_carta.estado, "\n")] = '\0';
     }
 
-    // clearBuffer();
     printf("Cidade: ");
     if (fgets(nova_carta.nome_cidade, sizeof(nova_carta.nome_cidade), stdin)) {
         nova_carta.nome_cidade[strcspn(nova_carta.nome_cidade, "\n")] = '\0';
     }
 
-    // clearBuffer();
     printf("População: ");
     if (fgets(populacao_str, sizeof(populacao_str), stdin)) {
         populacao_str[strcspn(populacao_str, "\n")] = '\0';
@@ -78,7 +76,6 @@ void inserir_carta(DynamicArray *cartas) {
     }
     nova_carta.populacao = (int) populacao_temp;
 
-    // clearBuffer();
     printf("Área (Km2): ");
     if (fgets(area_str, sizeof(area_str), stdin)) {
         area_str[strcspn(area_str, "\n")] = '\0';
@@ -91,7 +88,6 @@ void inserir_carta(DynamicArray *cartas) {
     }
     nova_carta.area = area_tmp;
 
-    // clearBuffer();
     printf("PIB (R$): ");
     if (fgets(pib_str, sizeof(pib_str), stdin)) {
         pib_str[strcspn(pib_str, "\n")] = '\0';
@@ -104,7 +100,6 @@ void inserir_carta(DynamicArray *cartas) {
     }
     nova_carta.pib = pib_tmp;
 
-    // clearBuffer();
     printf("Quantidade de Pontos Turísticos: ");
     if (fgets(qtd_pts_tur_str, sizeof(qtd_pts_tur_str), stdin)) {
         qtd_pts_tur_str[strcspn(qtd_pts_tur_str, "\n")] = '\0';

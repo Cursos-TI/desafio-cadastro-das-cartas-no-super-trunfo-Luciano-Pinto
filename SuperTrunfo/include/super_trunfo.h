@@ -6,6 +6,8 @@
 #define SUPER_TRUNFO_H
 #include "dynamic_array.h"
 
+
+// Estrutura para representar uma carta do Super Trunfo
 typedef struct {
     char codigo_carta[4];
     char estado[100];

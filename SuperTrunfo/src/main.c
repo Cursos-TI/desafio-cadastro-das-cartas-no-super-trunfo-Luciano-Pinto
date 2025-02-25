@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "Interface.h"
+#include "interface.h"
 #include "super_trunfo.h"
 #include "dynamic_array.h"
 
@@ -16,6 +16,7 @@ int main(void) {
     // Cria o array dinâmico que conterá as cartas.
     DynamicArray *cartasArray = createArray(sizeof(CartaSuperTrunfo), INITIAL_CAPACITY);
 
+    // Menu de controle da aplicação.
     exibirMenuInicialEObterOpcao(cartasArray);
 
 
