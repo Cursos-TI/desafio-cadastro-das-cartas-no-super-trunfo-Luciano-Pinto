@@ -1,0 +1,21 @@
+# ninja log v6
+2	30	1741051544319163280	CMakeFiles/super_trunfo.dir/src/main.c.o	ba2c37faef54e68b
+1	34	1741051544318163274	CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o	d3291d0ff88c8af6
+1	39	1741051544318163274	CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o	4facf9cbf6ff7854
+1	48	1741051544318163274	CMakeFiles/super_trunfo.dir/src/interface.c.o	251a15c1e5afe253
+48	65	1741051544365163550	bin/super_trunfo	f32ec17c4164533
+3	23	1741051884090029884	CMakeFiles/super_trunfo.dir/src/main.c.o	ba2c37faef54e68b
+2	27	1741051884089029879	CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o	4facf9cbf6ff7854
+2	29	1741051884089029879	CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o	d3291d0ff88c8af6
+3	38	1741051884090029884	CMakeFiles/super_trunfo.dir/src/interface.c.o	251a15c1e5afe253
+38	54	1741051884125030065	bin/super_trunfo	f32ec17c4164533
+1	5	1741051893102076544	clean	40d7367b24faa8b9
+1	26	1741051899826111287	CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o	d3291d0ff88c8af6
+2	27	1741051899827111292	CMakeFiles/super_trunfo.dir/src/main.c.o	ba2c37faef54e68b
+1	29	1741051899826111287	CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o	4facf9cbf6ff7854
+1	34	1741051899826111287	CMakeFiles/super_trunfo.dir/src/interface.c.o	251a15c1e5afe253
+34	50	1741051899859111457	bin/super_trunfo	f32ec17c4164533
+1	19	1741054054317503093	CMakeFiles/super_trunfo.dir/src/main.c.o	ba2c37faef54e68b
+1	23	1741054054317503093	CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o	4facf9cbf6ff7854
+1	32	1741054054317503093	CMakeFiles/super_trunfo.dir/src/interface.c.o	251a15c1e5afe253
+32	47	1741054054348502700	bin/super_trunfo	f32ec17c4164533

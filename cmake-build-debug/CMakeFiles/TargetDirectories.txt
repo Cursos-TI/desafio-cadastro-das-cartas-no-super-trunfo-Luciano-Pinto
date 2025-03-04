@@ -1,0 +1,3 @@
+/home/lucianopinto/CLionProjects/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/cmake-build-debug/CMakeFiles/super_trunfo.dir
+/home/lucianopinto/CLionProjects/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lucianopinto/CLionProjects/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/cmake-build-debug/CMakeFiles/rebuild_cache.dir

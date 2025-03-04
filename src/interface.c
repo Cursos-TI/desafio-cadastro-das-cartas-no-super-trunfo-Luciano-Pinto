@@ -11,9 +11,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-#include <limits.h>
 
 #include "interface.h"
+
+#include <limits.h>
+
 #include "dynamic_array.h"
 #include "super_trunfo.h"
 
@@ -21,34 +23,19 @@
 // Função para limpeza de buffer do teclado.
 void clear_buffer() {
     int c;
-    while ((c = getchar()) != '\n' && c != EOF) {
-        continue;
-    }
+    while ((c = getchar()) != '\n' && c != EOF);
 }
 
 void read_string_input(char *buffer, size_t size, const char *prompt) {
-    if (size == 0 || buffer == NULL) {
-        return;
-    }
-
     printf("%s", prompt);
 
-    if (fgets(buffer, (int)(size > INT_MAX ? INT_MAX : size), stdin)) {
-        size_t len = strcspn(buffer, "\n");
+    if (fgets(buffer, size > INT_MAX ? INT_MAX : (int) size, stdin)) {
+        const size_t len = strcspn(buffer, "\n");
 
-        // Ensure len is strictly within safe bounds
-        if (len >= size) {
-            len = size - 1;
-        }
-
-        // Absolute last safety check before writing null terminator
         if (len < size) {
             buffer[len] = '\0';
         }
     }
-
-    // Secondary safety net in case something slips through
-    buffer[size - 1] = '\0';
 }
 
 int read_int_input(const char *prompt) {
@@ -117,19 +104,8 @@ void exibir_menu_inicial_e_obter_opcao(DynamicArray *array) {
         char opcao = '\0';
 
         exibir_menu();        
-        printf("\nOpção: ");
-
-        if (fgets(input, sizeof(input), stdin)) {
-            size_t index = strcspn(input, "\n");
-            if (index < sizeof(input)) {
-                input[index] = '\0';
-            }
-
-            // garante que não está vazio
-            if (input[0] != '\0') {
-                opcao = input[0];
-            }
-        }
+        read_string_input(input, sizeof(input), "\nOpcao: ");
+        opcao = input[0];
 
         switch  (opcao) {
             case '1':

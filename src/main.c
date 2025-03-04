@@ -2,7 +2,6 @@
 // Created by lucianopinto on 20/02/25.
 //
 
-#include <stdio.h>
 #include <stdlib.h>
 
 #include "interface.h"
@@ -19,5 +18,5 @@ int main(void) {
     // Menu de controle da aplicação.
     exibir_menu_inicial_e_obter_opcao(cartasArray);
 
-
+    return EXIT_SUCCESS;
 }
