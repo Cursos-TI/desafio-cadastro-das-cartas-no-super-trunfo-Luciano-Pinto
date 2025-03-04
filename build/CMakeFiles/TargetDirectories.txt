@@ -1,0 +1,3 @@
+/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build/CMakeFiles/super_trunfo.dir
+/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build/CMakeFiles/edit_cache.dir
+/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build/CMakeFiles/rebuild_cache.dir

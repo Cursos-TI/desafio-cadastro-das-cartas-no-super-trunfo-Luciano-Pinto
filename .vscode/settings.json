@@ -2,6 +2,13 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
     ],
-    "sonarlint.pathToCompileCommands": "${workspaceFolder}/SuperTrunfo/build/compile_commands.json",
-    "cmake.sourceDirectory": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/SuperTrunfo"
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "cmake.sourceDirectory": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto",
+    "cSpell.words": [
+        "linuxbrew"
+    ],
+    "cmake.generator": "Ninja",
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "commentTranslate.browse.mode": "inplace"
 }

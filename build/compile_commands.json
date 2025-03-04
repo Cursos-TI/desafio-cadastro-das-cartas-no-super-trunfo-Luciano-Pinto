@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-14 -I/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/include -g -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o -c /home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/cartas_super_trunfo.c",
+  "file": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/cartas_super_trunfo.c",
+  "output": "CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o"
+},
+{
+  "directory": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-14 -I/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/include -g -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o -c /home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/dynamic_array.c",
+  "file": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/dynamic_array.c",
+  "output": "CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o"
+},
+{
+  "directory": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-14 -I/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/include -g -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/interface.c.o -c /home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/interface.c",
+  "file": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/interface.c",
+  "output": "CMakeFiles/super_trunfo.dir/src/interface.c.o"
+},
+{
+  "directory": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-14 -I/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/include -g -std=gnu11 -o CMakeFiles/super_trunfo.dir/src/main.c.o -c /home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/main.c",
+  "file": "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/src/main.c",
+  "output": "CMakeFiles/super_trunfo.dir/src/main.c.o"
+}
+]

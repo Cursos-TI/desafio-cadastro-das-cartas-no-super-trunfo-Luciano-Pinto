@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o CMakeFiles/super_trunfo.dir/src/interface.c.o CMakeFiles/super_trunfo.dir/src/main.c.o  -o bin/super_trunfo 

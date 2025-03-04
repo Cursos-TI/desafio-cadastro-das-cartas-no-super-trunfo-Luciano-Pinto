@@ -1,0 +1,10 @@
+# ninja log v6
+2	79	1741033126432882150	CMakeFiles/super_trunfo.dir/src/main.c.o	f37bb8e895c295f4
+1	77	1741033126431882149	CMakeFiles/super_trunfo.dir/src/dynamic_array.c.o	298eef5fdd56d027
+1	81	1741043442897992407	CMakeFiles/super_trunfo.dir/src/interface.c.o	ff29154b6982afe1
+1	111	1741033126431882149	CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o	5a9a55c411fda4ec
+81	98	1741043442976999127	bin/super_trunfo	aa22124d634a6359
+2	57	1741050811875744660	CMakeFiles/super_trunfo.dir/src/main.c.o	f37bb8e895c295f4
+1	77	1741050811874744657	CMakeFiles/super_trunfo.dir/src/cartas_super_trunfo.c.o	5a9a55c411fda4ec
+2	91	1741050811875744660	CMakeFiles/super_trunfo.dir/src/interface.c.o	ff29154b6982afe1
+91	108	1741050811964744909	bin/super_trunfo	aa22124d634a6359

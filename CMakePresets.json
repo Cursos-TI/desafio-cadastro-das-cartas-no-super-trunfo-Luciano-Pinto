@@ -1,0 +1,30 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 19,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "ninja-debug",
+        "displayName": "Ninja Debug",
+        "description": "Use Ninja generator with Debug build",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "/home/linuxbrew/.linuxbrew/bin/gcc-14",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+          "CMAKE_CXX_COMPILER": "/home/linuxbrew/.linuxbrew/bin/g++-14"
+        }
+      }
+    ],
+    "buildPresets": [
+        {
+            "name": "ninja-debug-build",
+            "configurePreset": "ninja-debug"
+        }
+    ]
+  }
+  

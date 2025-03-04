@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SuperTrunfo",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "super_trunfo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-super_trunfo-Debug-083ed3a9dcc3e8d969c5.json",
+					"name" : "super_trunfo",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto/build",
+		"source" : "/home/lucianopinto/Development/GraduacaoEstacio/Introducao_a_Programacao_de_Computadores/desafio-cadastro-das-cartas-no-super-trunfo-Luciano-Pinto"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
