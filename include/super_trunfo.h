@@ -16,11 +16,14 @@ typedef struct {
     float area;
     double pib;
     int qtd_pontos_turisticos;
+    double super_poder;
 } CartaSuperTrunfo;
 
-float calcular_densidade_populacional(float populacao, float area);
+float calcular_densidade_populacional(int populacao, float area);
 
-double calcular_pib_per_capta(double populacao, double pib);
+double calcular_pib_per_capta(int populacao, double pib);
+
+double calcular_super_poder(int populacao, float area, double pib, int qtd_pontos_turisticos);
 
 void imprimir_carta(CartaSuperTrunfo carta);
 
