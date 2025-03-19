@@ -4,10 +4,10 @@
  */
 
 
+#include "dynamic_array.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "dynamic_array.h"
 
 // Função de inicialização do Array Dinâmico
 DynamicArray* create_array(const size_t elementSize, const size_t initialCapacity) {
@@ -59,7 +59,7 @@ void* get_element(const DynamicArray *arr, const size_t index) {
     return NULL;
   }
 
-  return (char*) arr->data + (index * arr->elementSize);
+  return arr->data + (index * arr->elementSize);
 }
 
 

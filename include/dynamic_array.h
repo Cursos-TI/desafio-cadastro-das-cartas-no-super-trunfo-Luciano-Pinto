@@ -4,6 +4,7 @@
 
 #ifndef DYNAMIC_ARRAY_H
 #define DYNAMIC_ARRAY_H
+#include <stddef.h>
 
 // Estrutura para representar um Array Dinâmico
 typedef struct {
